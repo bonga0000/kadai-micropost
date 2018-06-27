@@ -91,6 +91,7 @@ class User extends Authenticatable
         $exist = $this->is_favoriting($postId);
         
         
+        
         if($exist){
             return false;
         }else{
@@ -104,6 +105,7 @@ class User extends Authenticatable
     public function executeunfavorite($postId)
     {
         $exist = $this->is_favoriting($postId);
+        
         
         
         if($exist){
